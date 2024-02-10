@@ -1,0 +1,30 @@
+{
+  "name": "playwrightws",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/acahet/playwrightws.git",
+  "author": "Anderson Cahet <anderson.cahet@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.17",
+    "dotenv": "^16.4.1",
+    "husky": "^9.0.10"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "tsc:check": "tsc --noEmit",
+    "code:check": "yarn tsc:check && yarn lint && prettier --check './**/*.ts'",
+    "code:format": "yarn lint:fix && prettier --write './**/*.ts'",
+    "code:pretty": "prettier --loglevel debug './**/*.ts'",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-playwright": "^0.22.2"
+  }
+}

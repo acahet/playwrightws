@@ -1,0 +1,11 @@
+{
+    "root": true,
+    "rules": {
+      "camelcase": "off",
+      "playwright/no-skipped-test": "off",
+      "no-undef": "off",
+      "no-underscore-dangle": "off",
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "playwright/no-conditional-in-test": "off"
+    }
+  }
