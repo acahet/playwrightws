@@ -17,7 +17,8 @@
     "code:check": "yarn tsc:check && yarn lint && prettier --check './**/*.ts'",
     "code:format": "yarn lint:fix && prettier --write './**/*.ts'",
     "code:pretty": "prettier --loglevel debug './**/*.ts'",
-    "prepare": "husky"
+    "prepare": "husky",
+    "report": "npx playwright show-report"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.21.0",
